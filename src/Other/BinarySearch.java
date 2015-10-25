@@ -13,7 +13,7 @@ import java.util.Scanner;
  */
 public class BinarySearch {
     public int binSearch(int a[],int i, int j, int n){
-        if(i>=j && a[i]!=n){
+        if(i>j){
             return -1; 
         }
         int mid= (i+j)/2;

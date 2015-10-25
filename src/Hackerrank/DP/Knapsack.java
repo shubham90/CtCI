@@ -51,7 +51,7 @@ public class Knapsack {
             return k;
         if(n == 1 && arr[0] >k)
             return k;
-        int out = k*k;
+        int out;
         if((k-arr[n-1])>=0)
                out = Math.min(knapsack(arr,n-1,k), knapsack(arr,n,k-arr[n-1]));
             else 

@@ -36,7 +36,6 @@ public class SetProb {
          ans.add(i);
          ans.add(j);
          s3.add(ans);
-         Math. 
         }
     }
         System.out.println(s3);

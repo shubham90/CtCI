@@ -44,4 +44,4 @@ public class MatrixMulEff {
         int[] arr= {10,20,30,40};
         efficient_mul(arr, arr.length);
     }
-}
+w}

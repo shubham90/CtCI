@@ -6,7 +6,6 @@
 package saurabhschool.recursion;
 
 import java.util.Scanner;
-import static saurabhschool.recursion.printArray.printA;
 
 /**
  *

@@ -30,7 +30,6 @@ public class FermatsTheorum {
             }
         }
         System.out.println("This number is prime");
-        return;
     }
     
     
