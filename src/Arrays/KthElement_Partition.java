@@ -34,7 +34,7 @@ public class KthElement_Partition {
         }
         temp = arr[i+1];
         arr[i+1] = arr[pivot];
-        arr[pivot] = arr[i+1];
+        arr[pivot] = temp;
         pivot = i+1;
         return pivot;
     }

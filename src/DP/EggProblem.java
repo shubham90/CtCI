@@ -38,10 +38,8 @@ public class EggProblem {
         for (int j = 0; j < f; j++)
         store[1][j] = j;
         
-        for (int i=2; i<=e; i++)
-        {
-            for (int j = 2; j<=f; j++)
-            {
+        for(int i=2;i<=e;i++){
+            for (int j = 2; j<=f; j++){
                 store[i][j] = 9999;
                 for (int x = 1; x <= j; x++)
                 {

@@ -1,9 +1,6 @@
 package DP;
 
-import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
+import java.util.Scanner;
 
 public class CoinChange {
     public static long coin_change(int n, int m, int[] coins){
