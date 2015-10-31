@@ -16,7 +16,7 @@ public class MaxSum {
         int current_max=0;
         int global_max=0;
         for(int i=0;i<arr.length;i++){
-            current_max = Math.max(0, global_max+arr[i]);
+            current_max = Math.max(0, current_max+arr[i]);
             global_max = Math.max(current_max, global_max);
         }
         return global_max;
