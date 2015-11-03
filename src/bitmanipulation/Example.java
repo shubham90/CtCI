@@ -18,6 +18,8 @@ public static void main(String args[]){
     int num=8;
     int i=4;
     Example e= new Example();
+    int k=1;
+    System.out.print(k << 1);
     System.out.println("Bit at position "+i+" is 1:" + e.getBit(num, i));
     //Calculating the hamming distance between two numbers num1 & num2
     // Also calculating the number of ones in their XOR
