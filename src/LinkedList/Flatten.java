@@ -11,4 +11,18 @@ package LinkedList;
  */
 public class Flatten {
     
+    class Node{
+        int data;
+        Node right;
+        Node down;
+    }
+
+    public static void main(String args[]){
+        Node root =null;
+        root.data = 5;
+        for(int i=0;i<5;i++){
+            Node n = new Node();
+        }
+    }
+    
 }
