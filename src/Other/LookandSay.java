@@ -20,8 +20,7 @@ public class LookandSay {
         char repeat = num.charAt(0);
         int time=1;
         num= num.substring(1) + " ";
-    //    System.out.println(num);
-        for(char c:num.toCharArray()){
+        for(char c:num.toCharArray()){  
             if(c != repeat){
                 sb.append(time);
                 sb.append(repeat);
