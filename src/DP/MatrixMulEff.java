@@ -26,7 +26,7 @@ public class MatrixMulEff {
         for (i=1; i<n-L+1; i++)
         {
             j = i+L-1;
-            m[i][j] = 999999;
+            m[i][j] = Integer.MAX_VALUE;
             for (k=i; k<j; k++)
             {
                 // q = cost/scalar multiplications
