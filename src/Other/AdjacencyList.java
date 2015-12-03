@@ -49,7 +49,7 @@ public class AdjacencyList {
     public void bfs(){
         int[] visited = new int[adlist.length];
         LinkedList<Integer> sol = new LinkedList<>();
-        Queue q = new LinkedList<Integer>();
+        Queue q = new LinkedList<>();
         
         for(int i=0;i<adlist.length;i++){
             if(visited[i]==0){
