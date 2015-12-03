@@ -2,7 +2,9 @@
 import java.util.Scanner;
 
 /*
-Christy is interning at HackerRank. One day she has to distribute some chocolates to her colleagues. She is biased towards her friends and may have distributed the chocolates unequally. One of the program managers gets to know this and orders Christy to make sure everyone gets equal number of chocolates.
+Christy is interning at HackerRank. One day she has to distribute some chocolates to her colleagues. 
+She is biased towards her friends and may have distributed the chocolates unequally. 
+One of the program managers gets to know this and orders Christy to make sure everyone gets equal number of chocolates.
 
 But to make things difficult for the intern, she is ordered to equalize the number of chocolates for every colleague in the following manner,
 
@@ -16,7 +18,9 @@ Calculate minimum number of such operations needed to ensure that every colleagu
 Input Format
 
 First line contains an integer T denoting the number of testcases. T testcases follow. 
-Each testcase has 2 lines. First line of each testcase contains an integer N denoting the number of co-interns. Second line contains N space separated integers denoting the current number of chocolates each colleague has.
+
+Each testcase has 2 lines. First line of each testcase contains an integer N denoting the number of co-interns. 
+Second line contains N space separated integers denoting the current number of chocolates each colleague has.
 
 Output Format
 
@@ -50,7 +54,7 @@ Explanation
  */
 public class Equal {
     public static int equal(int[] arr, int n){
-        int min=99999;
+        int min=Integer.MAX_VALUE;
         int c =0;
         for(int i=0;i<n;i++){
             if(arr[i]<min)

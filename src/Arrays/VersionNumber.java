@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Objects;
 
 /**
  *
@@ -51,7 +52,7 @@ public class VersionNumber implements Comparator{
             v1 = Integer.parseInt(array1[i]);
             v2 = Integer.parseInt(array2[i]);
  
-            if (v1 != v2) {
+            if (!Objects.equals(v1, v2)) {
                 return v2-v1;
             }
         }
