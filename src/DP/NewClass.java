@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author Shubham
  */
-public class LongestPalindrome {
+public class NewClass {
     public static void len_palin(String str){
         char[] input=str.toCharArray();
         int n= str.length();
@@ -33,7 +33,7 @@ public class LongestPalindrome {
                     store[i][j]=2;
                   
                 }
-                if(input[i]==input[j]){ // just add  && store[i+1][j-1] == j-i-1 for continuious palindrome check
+                if(input[i]==input[j] && store[i+1][j-1] == j-i-1){
                     store[i][j]=store[i+1][j-1]+2;
                     
                 }
@@ -41,11 +41,7 @@ public class LongestPalindrome {
                     store[i][j]= Math.max(store[i+1][j], store[i][j-1]);
             }
         }
-        for(int y=0;y<n;y++){
-            System.out.println();
-            for(int z=0;z<n;z++)
-                System.out.print(store[y][z]);
-        }
+
         System.out.println("Length of maximum palindrome is: " + store[0][n-1]);
         
     }
@@ -53,6 +49,6 @@ public class LongestPalindrome {
     public static void main(String args[]){
         System.out.println("Enter String to find the longest palindrome");
         Scanner s = new Scanner(System.in);
-        len_palin(s.nextLine());
+        len_palin("MCATACK");
     }
 }
