@@ -49,6 +49,6 @@ public class NewClass {
     public static void main(String args[]){
         System.out.println("Enter String to find the longest palindrome");
         Scanner s = new Scanner(System.in);
-        len_palin("MCATACK");
+        len_palin("MCATACKM");
     }
 }
