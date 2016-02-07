@@ -50,6 +50,7 @@ import java.util.Scanner;
 public class StockMarket {
     public static int maxProfit(int k, int[] prices) {
         int[] profit = new int[k];
+        profit[0] =0;
         for(int i=1;i<k;i++){
             profit[i] = prices[i]-prices[i-1];
         }   
