@@ -26,6 +26,9 @@ public class RemoveSpaceFromString {
                     j++;
                 }
             }
+            else if(c==' ' && st.length()==0){
+                continue;
+            }
             else{
                 st.append(c);
                 j++;
