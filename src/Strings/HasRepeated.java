@@ -1,10 +1,12 @@
 /*
-First repeated character in the string
+First non repeated character in the string
  */
 package Strings;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Scanner;
+import java.util.Set;
 
 /**
  *
@@ -14,13 +16,13 @@ public class HasRepeated {
     
     
     public char hasRepeated(String word) { 
-    HashMap<Character, Boolean> h = new HashMap<>();
+    Set<Character> h = new HashSet<>();
     for(int i=0; i<word.length();i++){
-        if(h.containsKey(word.charAt(i))){
+        if(h.contains(word.charAt(i))){
             return word.charAt(i);
         }
         else{
-            h.put(word.charAt(i), true);
+            h.add(word.charAt(i));
            
         }
     }
