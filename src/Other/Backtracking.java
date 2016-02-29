@@ -16,7 +16,7 @@ public class Backtracking {
     public static boolean bt(int[] out, int curr, int n){
         if(curr==0)
             return true;
-        for(int i=0;i<2*n-curr-1;i++){
+            for(int i=0;i<2*n-curr-1;i++){
             if(out[i] == 0 && out[i+curr+1]==0){
                 out[i] = curr;
                 out[i+curr+1]=curr;
