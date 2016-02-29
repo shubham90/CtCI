@@ -16,7 +16,7 @@ public class UniqueAlphabets {
         BitSet b = new BitSet();
         for(i=0;i<str.length();i++){
         int a= str.charAt(i) - 'a';
-        if(b.get(a)== true)
+        if(b.get(a))
             return false;
         else {
                 b.set(a);
